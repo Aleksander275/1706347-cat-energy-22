@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Подбор программы, Кэт энерджи</title>
+  </head>
+
+  <body>
+
+    <header class="page-header">
+
+      <div class="page-header__logo" href="index.html">
+        <div class="logo-image"></div>
+        <div class="logo-title"><span>cat</span> energy</div>
+      </div>
+
+      <nav class="main-nav">
+
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
+            <li class="main-nav__item  main-nav__item--current"><a href="form.html">подбор программы</a></li>
+          </ul>
+        </div>
+
+      </nav>
+
+    </header>
+
+    <main class="page__main">
+
+      <h1 class="main__title--form">Подбор программы</h1>
+
+      <section class="form">
+
+        <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+
+        <form class="profile-form" method="GET" action="https://echo.htmlacademy.ru" target="_blank">
+
+          <fieldset class="profile-form__name">
+
+            <ul class="profile-form__list--name">
+
+              <li class="profile-form__item--name">
+
+                <input class="profile-form__input--name" type="text" id="name" name="name" placeholder="барсик">
+                <label for="name">ИМЯ:*</label>
+
+              </li>
+
+              <li class="profile-form__item--name">
+
+                <input class="profile-form__input--name" type="number" id="mass" name="mass" placeholder="7">
+                <label for="mass">Вес (кг):*</label>
+
+              </li>
+
+              <li class="profile-form__item--name">
+
+                <input class="profile-form__input--name" type="number" id="age" name="age" placeholder="7">
+                <label for="age">Возраст (лет):</label>
+
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+          <fieldset class="profile-form__programme">
+
+            <ul class="profile-form__list--programme">
+
+              <li class="profile-form__item--programme">
+
+                <input class="profile-form__radio" type="radio" id="slim" name="programme" checked>
+                <label for="slim">похудение</label>
+
+              </li>
+
+              <li class="profile-form__item--programme">
+
+                <input class="profile-form__radio" type="radio" id="big" name="programme">
+                <label for="big">Набор массы</label>
+
+              </li>
+
+              <li class="profile-form__item--programme">
+
+                <input class="profile-form__radio" type="radio" id="advice" name="programme">
+                <label for="advice">Не знаю (Нужен ваш совет)</label>
+
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+          <fieldset class="profile-form__login">
+
+            <legend class="profile-form__title">Контактные данные (владельца кота)</legend>
+
+            <ul class="profile-form__list--login">
+
+              <li class="profile-form__item--login">
+
+                <input class="profile-form__input--login" type="email" id="login" name="login" placeholder="kuklachev@gmail.com">
+                <label for="login">E-mail:*</label>
+
+              </li>
+
+              <li class="profile-form__item--login">
+
+                <input class="profile-form__input--tel" type="tel" id="" name="" placeholder="8 (960) 900-60-90">
+                <label for="">Телефон:*</label>
+
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+          <fieldset class="profile-form__comments">
+
+            <legend class="profile-form__title">Комментарий</legend>
+
+            <textarea class="profile-form__input--comments" id="comment" name="comment" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <label for="comment"></label>
+
+          </fieldset>
+
+          <fieldset class="profile-form__add">
+
+            <legend class="profile-form__title">Дополнительно</legend>
+
+            <ul class="profile-form__list--add">
+
+              <li  class="profile-form__item--add">
+
+                <input class="profile-form__checkbox" type="checkbox" id="filter-sweetener" name="sweetener" checked>
+                <label for="filter-sweetener">сахарозаменитель</label>
+
+              </li>
+
+              <li  class="profile-form__item--add">
+
+                <input class="profile-form__checkbox" type="checkbox" id="filter-water" name="water">
+                <label for="filter-water">питьевая вода</label>
+
+              </li>
+
+              <li  class="profile-form__item--add">
+
+                <input class="profile-form__checkbox" type="checkbox" id="filter-milk" name="milk">
+                <label for="filter-milk">молоко</label>
+
+              </li>
+
+              <li  class="profile-form__item--add">
+
+                <input class="profile-form__checkbox" type="checkbox" id="filter-vitamins" name="vitamins">
+                <label for="filter-vitamins">витамины</label>
+
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+          <button class="profile-form__button">отправить заявку</button>
+
+          <small class="profile-form__legend">* — Обязательные поля</small>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <div class="page-footer__wrapper">
+
+        <h2 class="page-footer__title">cat energy</h2>
+
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li class="social__item"><a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>HTML Academy</span></a>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>
