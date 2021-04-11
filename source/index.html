@@ -2,30 +2,39 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
 
     <header class="page-header">
 
-      <div class="page-header__logo" href="index.html">
-        <div class="logo-image"></div>
-        <div class="logo-title"><span>cat</span> energy</div>
-      </div>
+      <div class="page-header__wrapper">
 
-      <nav class="main-nav">
+        <div class="logo__wrapper">
 
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <a class="logo-image--link" href="index.html"><img class="logo-image--img" src="./img/logo-mobile.png" width="34" height="38" alt="логотип кэт энерджи"></a>
 
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current"><a href="index.html">главная</a></li>
-            <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
-            <li class="main-nav__item"><a href="form.html">подбор программы</a></li>
-          </ul>
+          <a class="logo-title--link" href="index.html"><img class="logo-title--img" src="./img/logo-mobile-2.svg" width="101" height="18" alt="кэт энерджи"></a>
+
+          <button class="main-nav__toggle toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
         </div>
 
-      </nav>
+        <nav class="main-nav">
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--current"><a href="index.html">главная</a></li>
+              <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
+              <li class="main-nav__item"><a href="form.html">подбор программы</a></li>
+            </ul>
+          </div>
+
+        </nav>
+
+      </div>
 
     </header>
 
@@ -39,11 +48,13 @@
 
           <div class="product-slogan__wrapper">
 
-            <h2 class="product-slogan__title">Функциональное питание для котов</h2>
+            <h2 class="product-slogan__title">Функциональное<br> питание для котов</h2>
 
             <p class="product-slogan__slogan">Занялся собой? Займись котом!</p>
 
           </div>
+
+          <a class="button" href="form.html">подобрать программу</a>
 
         </div>
 
@@ -52,8 +63,6 @@
           <div class="product-image__wrapper">
 
             <img class="product-image__image" src="./img/product/product-mobile.png" width="280" height="270" alt="изображение продукта">
-
-            <a class="button" href="form.html">подобрать программу</a>
 
           </div>
 
@@ -65,23 +74,31 @@
 
         <div class="programme__list">
 
-          <div class="programme__item programme__item--slim">
+          <div class="programme__item--wrapper">
 
-            <h2 class="programme__title">похудение</h2>
+            <div class="programme__item programme__item--slim">
 
-            <p class="programme__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <h2 class="programme__title">похудение</h2>
 
-            <a class="programme__link" href="">каталог slim</a>
+              <p class="programme__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+
+              <a class="programme__link" href="">каталог slim</a>
+
+            </div>
 
           </div>
 
-          <div class="programme__item programme__item--pro">
+          <div class="programme__item--wrapper">
 
-            <h2 class="programme__title">Набор массы</h2>
+            <div class="programme__item programme__item--pro">
 
-            <p class="programme__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <h2 class="programme__title">Набор массы</h2>
 
-            <a class="programme__link" href="">каталог pro</a>
+              <p class="programme__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+
+              <a class="programme__link" href="">каталог pro</a>
+
+            </div>
 
           </div>
 
@@ -93,32 +110,28 @@
 
         <div class="info__wrapper">
 
-          <h2 class="info__title"></h2>
+          <h2 class="info__title">Как это работает</h2>
 
           <ul class="info__list">
 
             <li class="info__item info__item--one">
-              <p class="info__desc">Функциональное питание
-                содержит только полезные
-                питательные вещества.</p>
+              <img src="./img/info__item--one.svg" width="60" height="60" alt="тематическая иконка">
+              <p class="info__desc">Функциональное питание<br> содержит только полезные<br> питательные вещества.</p>
             </li>
 
             <li class="info__item info__item--two">
-              <p class="info__desc">Выпускается в виде порошка,
-                который нужно лишь залить
-                кипятком и готово.</p>
+              <img src="./img/info__item--two.svg" width="60" height="60" alt="тематическая иконка">
+              <p class="info__desc">Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.</p>
             </li>
 
             <li class="info__item info__item--three">
-              <p class="info__desc">Замените один-два приема
-                обычной еды на наше
-                функциональное питание.</p>
+              <img src="./img/info__item--three.svg" width="60" height="60" alt="тематическая иконка">
+              <p class="info__desc">Замените один-два приема<br> обычной еды на наше<br> функциональное питание.</p>
             </li>
 
             <li class="info__item info__item--four">
-              <p class="info__desc">Уже через месяц наслаждайтесь
-                изменениями к лучшему
-                вашего питомца!</p>
+              <img src="./img/info__item--four.svg" width="60" height="60" alt="тематическая иконка">
+              <p class="info__desc">Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!</p>
             </li>
 
           </ul>
@@ -129,48 +142,65 @@
 
       <section class="sample">
 
-        <div class="sample__wrapper">
+        <div class="sample__conteiner">
 
-          <h2 class="sample__title">Живой пример</h2>
+          <div class="sample__wrapper">
 
-          <p class="sample__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <div class="simple__info">
 
-          <div class="simple__list">
+              <h2 class="sample__title">Живой пример</h2>
 
-            <div class="simple__item">
+              <p class="sample__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
 
-              <p class="simple__desc simple__desc--top">5 КГ</p>
+              <div class="simple__list">
 
-              <p class="simple__desc simple__desc--bottom">снижение веса</p>
+                <div class="simple__item-conteiner">
+
+                  <div class="simple__item">
+
+                    <p class="simple__desc simple__desc--top">5 КГ</p>
+
+                    <p class="simple__desc simple__desc--bottom">снижение<br> веса</p>
+
+                  </div>
+
+
+                  <div class="simple__item">
+
+                    <p class="simple__desc simple__desc--top">60 ДНЕЙ</p>
+
+                    <p class="simple__desc simple__desc--bottom">затрачено<br> времени</p>
+
+                  </div>
+
+                </div>
+
+                <div class="simple__item--bottom">Затраты на питание: <span>15000 РУБ.</span></div>
+
+              </div>
 
             </div>
 
+            <div class="simple__slider">
 
-            <div class="simple__item">
+              <div class="slider__big"><img src="./img/big-cat-mobile .png" width="320" height="232" alt="толстый кот"></div>
 
-              <p class="simple__desc simple__desc--top">60 ДНЕЙ</p>
+              <div class="slider__slim"><img src="./img/slim-cat-mobile.png" width="251" height="240" alt="худой кот"></div>
 
-              <p class="simple__desc simple__desc--bottom">затрачено времени</p>
+              <div class="slider__control">
 
-            </div>
+                <span class="control__text">было</span>
 
-            <div class="simple__item simple__item--bottom">Затраты на питание: 15 000 РУБ. </div>
+                <div class="control__item">
 
-          </div>
+                  <input class="control-range" type="range" id="cat-range" name="cat-range" min="0" max="1">
+                  <label for="cat-range"></label>
 
-          <div class="simple__slider">
+                </div>
 
-            <div class="slider__big"><img src="" alt="толстый кот"></div>
+                <span class="control__text">стало</span>
 
-            <div class="slider__slim"><img src="" alt="худой кот"></div>
-
-            <div class="slider__control">
-
-              <span class="control__left">было</span>
-
-              <div class="control__item"></div>
-
-              <span class="control__right">стало</span>
+              </div>
 
             </div>
 
@@ -186,15 +216,15 @@
 
           <div class="location__desc">
 
-            <p class="location__desc--bold">приглашаем к сотрудничеству дилеров!</p>
+            <p class="location__desc--bold">приглашаем<br> к сотрудничеству<br> дилеров!</p>
 
-            <p class="location__desc--regular">ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+            <p class="location__desc--regular">ул. Большая<br> Конюшенная, д. 19/8 <span>Санкт-Петербург<span</p>
 
           </div>
 
           <div class="location__map">
 
-            <iframe class="map" src="" frameborder="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5845149169324!2d30.321094750559467!3d59.93903625434457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617961008837!5m2!1sru!2sru" width="600" height="362" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
 
           </div>
 
@@ -208,9 +238,11 @@
 
       <div class="page-footer__wrapper">
 
-        <h2 class="page-footer__title">cat energy</h2>
+        <div class="page-footer__title">
+          <img class="page-footer__title--img" src="./img/footer-logo.svg" width="128" height="24" alt="лого Кэт энерджи">
+        </div>
 
-        <div class="page-footer__social social">
+        <div class="page-footer__social">
           <ul class="social__list">
             <li class="social__item"><a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
             <li class="social__item"><a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
@@ -218,13 +250,35 @@
           </ul>
         </div>
 
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>HTML Academy</span></a>
+        <div class="page-footer__copyright">
+
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+
+          <a class="copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
+
         </div>
+
 
       </div>
 
     </footer>
 
   </body>
+
+  <script>
+    const navMain = document.querySelector('.main-nav');
+    const navToggle = document.querySelector('.main-nav__toggle');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--close')) {
+        navMain.classList.remove('main-nav--close');
+        navMain.classList.add('main-nav--open');
+      } else {
+        navMain.classList.add('main-nav--close');
+        navMain.classList.remove('main-nav--open');
+      }
+    });
+
+  </script>
+
 </html>
