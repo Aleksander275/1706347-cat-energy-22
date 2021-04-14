@@ -43,7 +43,7 @@
     top: 0;
     height: 302px;
     width: 100%;
-    background-image: url(../../img/background-cat-mobile.png);
+    background-image: url("../../img/background-cat-mobile.png");
     background-repeat: no-repeat;
     background-position-x: 50%;
     z-index: -2;
@@ -72,9 +72,9 @@
 
   @media (min-width: @desktop-width) {
     &::after {
-      background-image: url(../../img/background-cat-desktop.png);
+      background-image: url("../../img/background-cat-desktop.png");
       height: 594px;
-      left: calc(1220px/2);
+      left: 610px;
       top: -100px;
       background-position-x: inherit;
       width: 720px;
@@ -84,7 +84,7 @@
       background-color: @basic-green;
       height: 594px;
       top: -100px;
-      left: calc(1220px/2);
+      left: 610px;
       width: 720px;
     }
   }
@@ -168,7 +168,7 @@
 
 
 .programme__item {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   color: @special-dark-grey;
   background-color: @basic-grey;
   padding: 0 20px;
@@ -184,20 +184,19 @@
 }
 
 .programme__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: @basic-black;
   margin: 0;
-  padding: 0%;
   padding: 30px 0 29px 71px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -209,13 +208,13 @@
   padding-top: 19px;
   padding-bottom: 22px;
   display: block;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @basic-black;
   text-decoration: none;
-  background-image: url(../../img/programme-icon.svg);
+  background-image: url("../../img/programme-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 45%;
   cursor: pointer;
@@ -261,7 +260,7 @@
   top: 21px;
   width: 50px;
   height: 53px;
-  background-image: url(../../img/programme-cat_slim.svg);
+  background-image: url("../../img/programme-cat_slim.svg");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
@@ -282,7 +281,7 @@
   left: 13px;
   width: 67px;
   height: 50px;
-  background-image: url(../../img/programme-cat_pro.svg);
+  background-image: url("../../img/programme-cat_pro.svg");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
@@ -335,7 +334,7 @@
   margin-top: 38px;
   margin-bottom: 42px;
   list-style: none;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   color: @special-dark-grey;
 
   @media (min-width: @tablet-width) {
@@ -378,28 +377,28 @@
 
 @media (min-width: @tablet-width) {
   .info__item--one {
-    background-image: url(../../img/one.svg);
+    background-image: url("../../img/one.svg");
     background-repeat: no-repeat;
     height: 280px;
     background-position: 45% 75%;
   }
 
   .info__item--two {
-    background-image: url(../../img/two.svg);
+    background-image: url("../../img/two.svg");
     background-repeat: no-repeat;
     height: 280px;
     background-position: 45% 75%;
   }
 
   .info__item--three {
-    background-image: url(../../img/three.svg);
+    background-image: url("../../img/three.svg");
     background-repeat: no-repeat;
     height: 280px;
     background-position: 45% 75%;
   }
 
   .info__item--four {
-    background-image: url(../../img/four.svg);
+    background-image: url("../../img/four.svg");
     background-repeat: no-repeat;
     height: 280px;
     background-position: 45% 75%;
@@ -449,7 +448,6 @@
     display: flex;
     justify-content: space-between;
   }
-
 }
 
 .simple__info {
@@ -468,7 +466,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
-  line-height: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -477,7 +475,7 @@
 }
 
 .sample__desc {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   color: @special-dark-grey;
   margin: 0;
   margin-bottom: 25px;
@@ -490,12 +488,6 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 69px;
   }
-}
-
-.simple__item-conteiner {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
 }
 
 .simple__item {
@@ -534,7 +526,7 @@
 
 .simple__desc--bottom {
   margin: 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: @special-dark-grey;
@@ -569,6 +561,10 @@
 }
 
 .simple__item-conteiner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
   @media (min-width: @tablet-width) {
     width: 366px;
   }
@@ -666,7 +662,7 @@
     position: absolute;
     background-color: @basic-white;
     top: 80px;
-    left: calc((100% - 1220px)/2);
+    left: (~"(100% - 1220px)/2");
   }
 }
 
@@ -675,7 +671,7 @@
   margin-top: 28px;
   font-size: 16px;
   text-transform: uppercase;
-  color: #111;
+  color: #111111;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -690,7 +686,7 @@
 .location__desc--regular {
   margin: 0;
   margin-top: 28px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   line-height: 20px;
   color: @special-dark-grey;
   padding-left: 13px;
@@ -711,5 +707,4 @@
   @media (min-width: @desktop-width) {
     margin: 0;
   }
-
 }
