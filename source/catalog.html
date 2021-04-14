@@ -3,31 +3,41 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Каталог Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body class="page__body">
 
     <header class="page-header">
 
-      <div class="page-header__logo" href="index.html">
-        <div class="logo-image"></div>
-        <div class="logo-title"><span>cat</span> energy</div>
-      </div>
+      <div class="page-header__wrapper">
 
-      <nav class="main-nav">
+        <div class="logo__wrapper">
 
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <a class="logo-image--link" href="index.html"><img class="logo-image--img" src="./img/logo-mobile.png" width="34" height="38" alt="логотип кэт энерджи"></a>
 
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">главная</a></li>
-            <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
-            <li class="main-nav__item"><a href="form.html">подбор программы</a></li>
-          </ul>
+          <a class="logo-title--link" href="index.html"><img class="logo-title--img" src="./img/logo-mobile-2.svg" width="101" height="18" alt="кэт энерджи"></a>
+
+          <button class="main-nav__toggle toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+
         </div>
 
-      </nav>
+        <nav class="main-nav">
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="index.html">главная</a></li>
+              <li class="main-nav__item main-nav__item--current"><a href="catalog.html">каталог продукции</a></li>
+              <li class="main-nav__item"><a href="form.html">подбор программы</a></li>
+            </ul>
+          </div>
+
+        </nav>
+
+      </div>
 
     </header>
 
