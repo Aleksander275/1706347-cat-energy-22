@@ -1,109 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Подбор программы, Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicon/favicon-little.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/favicon-big.svg">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
-  <body class="pahe__body">
+  <body class="page__body">
 
     <header class="page-header">
 
-      <div class="page-header__logo" href="index.html">
-        <div class="logo-image"></div>
-        <div class="logo-title"><span>cat</span> energy</div>
-      </div>
+      <div class="page-header__wrapper">
 
-      <nav class="main-nav">
+        <div class="logo__wrapper">
 
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <a class="logo-image--link" href="index.html"><img class="logo-image--img" src="./img/logo-mobile.png" width="34" height="38" alt="логотип кэт энерджи"></a>
 
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">главная</a></li>
-            <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
-            <li class="main-nav__item main-nav__item--current"><a href="form.html">подбор программы</a></li>
-          </ul>
+          <a class="logo-title--link" href="index.html"><img class="logo-title--img" src="./img/logo-mobile-2.svg" width="101" height="18" alt="кэт энерджи"></a>
+
+          <button class="main-nav__toggle  toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
         </div>
 
-      </nav>
+        <nav class="main-nav main-nav--close">
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link main-nav__catalog-link" href="index.html">главная</a></li>
+              <li class="main-nav__item main-nav__item--current"><a class="main-nav__link main-nav__catalog-link" href="catalog.html">каталог продукции</a></li>
+              <li class="main-nav__item"><a class="main-nav__link main-nav__catalog-link main-nav__item--current-catalog" href="form.html">подбор программы</a></li>
+            </ul>
+          </div>
+
+        </nav>
+
+      </div>
 
     </header>
 
-    <main class="page__main">
+    <main class="page__main--form">
 
       <h1 class="main__title--form">Подбор программы</h1>
 
       <section class="form">
 
-        <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+        <div class="form__title--container">
+
+          <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+
+        </div>
 
         <form class="profile-form" method="GET" action="https://echo.htmlacademy.ru" target="_blank">
 
-          <fieldset class="profile-form__name">
+          <div class="profile-form__filter-container">
 
-            <ul class="profile-form__list--name">
+            <fieldset class="profile-form__name">
 
-              <li class="profile-form__item--name">
+              <ul class="profile-form__list--name">
 
-                <input class="profile-form__input--name" type="text" id="name" name="name" placeholder="барсик">
-                <label for="name">ИМЯ:*</label>
+                <li class="profile-form__item--name">
 
-              </li>
+                  <input class="profile-form__input--name" type="text" id="name" name="name" placeholder="барсик">
+                  <label for="name">ИМЯ:*</label>
 
-              <li class="profile-form__item--name">
+                </li>
 
-                <input class="profile-form__input--name" type="number" id="mass" name="mass" placeholder="7">
-                <label for="mass">Вес (кг):*</label>
+                <li class="profile-form__item--name">
 
-              </li>
+                  <input class="profile-form__input--name" type="number" id="mass" name="mass" placeholder="7">
+                  <label for="mass">Вес (кг):*</label>
 
-              <li class="profile-form__item--name">
+                </li>
 
-                <input class="profile-form__input--name" type="number" id="age" name="age" placeholder="7">
-                <label for="age">Возраст (лет):</label>
+                <li class="profile-form__item--name">
 
-              </li>
+                  <input class="profile-form__input--name" type="number" id="age" name="age" placeholder="7">
+                  <label for="age">Возраст (лет):</label>
 
-            </ul>
+                </li>
 
-          </fieldset>
+              </ul>
 
-          <fieldset class="profile-form__programme">
+            </fieldset>
 
-            <ul class="profile-form__list--programme">
+            <fieldset class="profile-form__programme">
 
-              <li class="profile-form__item--programme">
+              <ul class="profile-form__list--programme">
 
-                <input class="profile-form__radio" type="radio" id="slim" name="programme" checked>
-                <label for="slim">похудение</label>
+                <li class="profile-form__item--programme">
 
-              </li>
+                  <input class="profile-form__radio visually-hidden" type="radio" id="slim" name="programme" checked>
+                  <label for="slim">похудение</label>
 
-              <li class="profile-form__item--programme">
+                </li>
 
-                <input class="profile-form__radio" type="radio" id="big" name="programme">
-                <label for="big">Набор массы</label>
+                <li class="profile-form__item--programme">
 
-              </li>
+                  <input class="profile-form__radio visually-hidden" type="radio" id="big" name="programme">
+                  <label for="big">Набор массы</label>
 
-              <li class="profile-form__item--programme">
+                </li>
 
-                <input class="profile-form__radio" type="radio" id="advice" name="programme">
-                <label for="advice">Не знаю (Нужен ваш совет)</label>
+                <li class="profile-form__item--programme">
 
-              </li>
+                  <input class="profile-form__radio visually-hidden" type="radio" id="advice" name="programme">
+                  <label for="advice">Не знаю (Нужен ваш совет)</label>
 
-            </ul>
+                </li>
 
-          </fieldset>
+              </ul>
+
+            </fieldset>
+
+          </div>
 
           <fieldset class="profile-form__login">
 
-            <legend class="profile-form__title">Контактные данные (владельца кота)</legend>
+            <div class="profile-form__container-title">
+
+              <h3 class="profile-form__title--login">Контактные данные (владельца кота)</h3>
+
+            </div>
 
             <ul class="profile-form__list--login">
 
@@ -112,12 +136,20 @@
                 <input class="profile-form__input--login" type="email" id="login" name="login" placeholder="kuklachev@gmail.com">
                 <label for="login">E-mail:*</label>
 
+                <svg class="profile-form__input--login-icon" width="20" height="15">
+                  <use xlink:href="./img/svg/sprite.svg#email-icon"></use>
+                </svg>
+
               </li>
 
               <li class="profile-form__item--login">
 
-                <input class="profile-form__input--tel" type="tel" id="" name="" placeholder="8 (960) 900-60-90">
-                <label for="">Телефон:*</label>
+                <input class="profile-form__input--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90">
+                <label for="tel">Телефон:*</label>
+
+                <svg class="profile-form__input--phone-icon" width="20" height="21">
+                  <use xlink:href="./img/svg/sprite.svg#phone-icon"></use>
+                </svg>
 
               </li>
 
@@ -127,43 +159,55 @@
 
           <fieldset class="profile-form__comments">
 
-            <legend class="profile-form__title">Комментарий</legend>
+            <div class="profile-form__container-title">
 
-            <textarea class="profile-form__input--comments" id="comment" name="comment" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
-            <label for="comment"></label>
+              <h3 class="profile-form__title--comments">Комментарий</h3>
+
+            </div>
+
+            <div class="profile-form__container-text">
+
+              <textarea class="profile-form__input--comments" id="comment" name="comment" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label for="comment"></label>
+
+            </div>
 
           </fieldset>
 
           <fieldset class="profile-form__add">
 
-            <legend class="profile-form__title">Дополнительно</legend>
+            <div class="profile-form__container-title">
+
+              <h3 class="profile-form__title--add">Дополнительно</h3>
+
+            </div>
 
             <ul class="profile-form__list--add">
 
               <li  class="profile-form__item--add">
 
-                <input class="profile-form__checkbox" type="checkbox" id="filter-sweetener" name="sweetener" checked>
+                <input class="profile-form__checkbox visually-hidden" type="checkbox" id="filter-sweetener" name="sweetener" checked>
                 <label for="filter-sweetener">сахарозаменитель</label>
 
               </li>
 
               <li  class="profile-form__item--add">
 
-                <input class="profile-form__checkbox" type="checkbox" id="filter-water" name="water">
+                <input class="profile-form__checkbox visually-hidden" type="checkbox" id="filter-water" name="water">
                 <label for="filter-water">питьевая вода</label>
 
               </li>
 
               <li  class="profile-form__item--add">
 
-                <input class="profile-form__checkbox" type="checkbox" id="filter-milk" name="milk">
+                <input class="profile-form__checkbox visually-hidden" type="checkbox" id="filter-milk" name="milk">
                 <label for="filter-milk">молоко</label>
 
               </li>
 
               <li  class="profile-form__item--add">
 
-                <input class="profile-form__checkbox" type="checkbox" id="filter-vitamins" name="vitamins">
+                <input class="profile-form__checkbox visually-hidden" type="checkbox" id="filter-vitamins" name="vitamins">
                 <label for="filter-vitamins">витамины</label>
 
               </li>
@@ -172,11 +216,39 @@
 
           </fieldset>
 
-          <button class="profile-form__button">отправить заявку</button>
+          <div class="profile-form__conteiner-button">
 
-          <small class="profile-form__legend">* — Обязательные поля</small>
+            <button class="profile-form__button"><span>отправить заявку</span></button>
+
+            <small class="profile-form__legend">* — Обязательные поля</small>
+
+          </div>
 
         </form>
+
+      </section>
+
+      <section class="location">
+
+        <h2 class="visually-hidden">Как нас найти</h2>
+
+        <div class="location__wrapper">
+
+          <div class="location__desc">
+
+            <p class="location__desc--bold">приглашаем<br> к сотрудничеству<br> дилеров!</p>
+
+            <p class="location__desc--regular">ул. Большая<br> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+
+          </div>
+
+          <div class="location__map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5845149169324!2d30.321094750559467!3d59.93903625434457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617961008837!5m2!1sru!2sru" width="600" height="362" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+
+          </div>
+
+        </div>
 
       </section>
 
@@ -186,23 +258,65 @@
 
       <div class="page-footer__wrapper">
 
-        <h2 class="page-footer__title">cat energy</h2>
+        <div class="page-footer__title">
+          <a href="index.html">
+            <img class="page-footer__title--img" src="./img/footer/footer-logo.svg" width="128" height="24" alt="лого Кэт энерджи">
+          </a>
+        </div>
 
-        <div class="page-footer__social social">
+        <div class="page-footer__social">
+
           <ul class="social__list">
-            <li class="social__item"><a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-            <li class="social__item"><a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
-            <li class="social__item"><a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__link--vkontakte" width="23" height="16">
+                  <use xlink:href="./img/svg/sprite.svg#vk-icon"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__link--instagram" width="16" height="16">
+                  <use xlink:href="./img/svg/sprite.svg#instagram-icon"></use>
+                </svg>
+                <span class="visually-hidden">Инстаграмм</span>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__link--facebook" width="13" height="20">
+                  <use xlink:href="./img/svg/sprite.svg#facebook-icon"></use>
+                </svg>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+
           </ul>
+
         </div>
 
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>HTML Academy</span></a>
+        <div class="page-footer__copyright">
+
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link--icon" width="27" height="34">
+              <use xlink:href="./img/svg/sprite.svg#academy-icon"></use>
+            </svg>
+          </a>
+
         </div>
+
 
       </div>
 
     </footer>
+
+    <script src="./js/cat-energy.js"></script>
 
   </body>
 
