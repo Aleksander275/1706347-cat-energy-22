@@ -13,7 +13,29 @@
   margin-bottom: 16px;
 }
 
-.main-nav__toggle {
+.logo__wrapper a {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.toggle--close {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/logo_mobile--close.svg");
+  background-color: @basic-white;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.toggle--open {
   margin: 0;
   padding: 0;
   border: none;
@@ -32,16 +54,25 @@
   text-align: center;
 }
 
-.main-nav__item a {
+.main-nav__link {
   display: block;
   padding-top: 22px;
   padding-bottom: 24px;
   text-decoration: none;
+  text-transform: uppercase;
   color: @basic-black;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item::before {
@@ -84,7 +115,7 @@
     padding-bottom: 10px;
   }
 
-  .main-nav__item a {
+  .main-nav__link {
     padding: 0;
     text-decoration: none;
     font-size: 18px;
@@ -141,7 +172,7 @@
     background-repeat: no-repeat;
   }
 
-  .main-nav__item a {
+  .main-nav__link {
     padding: 0;
     text-decoration: none;
     color: @basic-white;
@@ -152,5 +183,16 @@
 
   .main-nav__item--current {
     border-bottom: 2px solid @basic-white;
+  }
+}
+
+//catalog-header
+@media (min-width: @desktop-width) {
+  .main-nav__catalog-link {
+    color: #111111;
+  }
+
+  .main-nav__item--current-catalog {
+    border-bottom: 2px solid @basic-green;
   }
 }
