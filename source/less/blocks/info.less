@@ -1,0 +1,137 @@
+//section info
+
+.info {
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
+}
+
+.info__wrapper {
+  margin-top: 27px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    margin-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    margin: 70px auto 0 auto;
+  }
+}
+
+.info__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.info__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 38px;
+  margin-bottom: 42px;
+  list-style: none;
+  font-family: "Arial", sans-serif;
+  color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 37px;
+    margin-bottom: 0;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 90px;
+  }
+}
+
+.info__item {
+  display: flex;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.info__desc {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .info__item--one {
+    background-image: url("../../img/info/one.svg");
+    background-repeat: no-repeat;
+    height: 280px;
+    background-position: 49% 65%;
+
+    @media (min-width: @desktop-width) {
+      background-position-x: 75%;
+    }
+  }
+
+  .info__item--two {
+    background-image: url("../../img/info/two.svg");
+    background-repeat: no-repeat;
+    height: 280px;
+    background-position: 57% 65%;
+
+    @media (min-width: @desktop-width) {
+      background-position-x: 95%;
+    }
+  }
+
+  .info__item--three {
+    background-image: url("../../img/info/three.svg");
+    background-repeat: no-repeat;
+    height: 280px;
+    background-position: 58% 65%;
+
+    @media (min-width: @desktop-width) {
+      background-position-x: 95%;
+    }
+  }
+
+  .info__item--four {
+    background-image: url("../../img/info/four.svg");
+    background-repeat: no-repeat;
+    height: 280px;
+    background-position: 62% 65%;
+
+    @media (min-width: @desktop-width) {
+      background-position-x: 100%;
+    }
+  }
+
+  .info__item img {
+    margin-top: 36px;
+    width: 80px;
+  }
+}

@@ -1,0 +1,192 @@
+//section product
+.product {
+  position: relative;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    height: 839px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    max-width: 1220px;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+.product-image {
+  position: relative;
+  top: -40px;
+
+  @media (min-width: @tablet-width) {
+    top: -83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 15px;
+    left: -47px;
+  }
+}
+
+.product-slogan__wrapper,
+.product-image__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-slogan__wrapper {
+  @media (min-width: @tablet-width) {
+    align-items: flex-start;
+  }
+}
+
+.product-slogan {
+  @media (min-width: @tablet-width) {
+    margin-left: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 302px;
+    width: 100%;
+    background-image: url("../../img/product/background-cat-mobile.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    z-index: -2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/product/background-cat-mobile@2x.png");
+      background-size: 320px 302px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 302px;
+    width: 100%;
+    background-color: @basic-green;
+    opacity: 0.85;
+    z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      background-image: none;
+    }
+
+    &::before {
+      background-color: @basic-white;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      background-image: url("../../img/product/background-cat-desktop.png");
+      height: 650px;
+      left: 640px;
+      top: -110px;
+      background-position-x: inherit;
+      width: 720px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/product/background-cat-desktop@2x.png");
+        background-size: 1044px 650px;
+      }
+    }
+
+    &::before {
+      background-color: @basic-green;
+      height: 696px;
+      top: -130px;
+      left: 640px;
+      width: 720px;
+    }
+  }
+}
+
+.product-slogan__title {
+  margin-top: 27px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 48px;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    color: @basic-black;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 95px;
+  }
+}
+
+.product-slogan__slogan {
+  margin: 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 5px 51px 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic-black;
+  }
+}
+
+.product-slogan .button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 11px 0;
+  color: @basic-white;
+  background-color: @basic-green;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  top: 275px;
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: fit-content;
+    padding: 16px 26px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    top: 0;
+    left: -4px;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0;
+  }
+}

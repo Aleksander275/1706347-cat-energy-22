@@ -1,0 +1,203 @@
+//section programme
+
+.programme {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    margin: 125px auto 0 auto;
+  }
+}
+
+.programme__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.programme__item {
+  position: relative;
+  padding: 0 20px;
+  margin-top: 21px;
+  font-family: "Arial", sans-serif;
+  color: @special-dark-grey;
+  background-color: @basic-grey;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 52px;
+    padding-bottom: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
+.programme__image--slim {
+  position: absolute;
+  top: 23px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+    top: 77px;
+    right: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 106px;
+    top: 41px;
+    left: 52px;
+  }
+}
+
+.programme__image--pro {
+  position: absolute;
+  left: 14px;
+  top: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 200px;
+    top: 87px;
+    left: initial;
+    right: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 100px;
+    top: 47px;
+    left: 33px;
+  }
+}
+
+.programme__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: @basic-black;
+  margin: 0;
+  padding: 30px 0 29px 71px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 75px 0 25px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 79px 0 73px 0;
+    text-align: center;
+  }
+}
+
+.programme__link {
+  display: flex;
+  align-items: center;
+  padding-top: 19px;
+  padding-bottom: 22px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @basic-black;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--icon {
+    margin-left: 15px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 25px;
+    }
+  }
+
+  &:hover .programme__link--icon {
+    width: 32px;
+    height: 18px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.programme__desc {
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
+  width: 227px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 32px;
+    width: 377px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: @basic-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 467px;
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programme__item--slim .programme__title {
+    padding-right: 9px;
+  }
+
+  .programme__item--pro .programme__title {
+    padding-left: 28px;
+  }
+}
+
+.programme__item--wrapper {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 570px;
+  }
+}
+
+.programme__item--pro {
+  @media (min-width: @tablet-width) {
+    margin-top: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+  }
+}
+
+.programme__desc--pro {
+  @media (min-width: @tablet-width) {
+    width: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 450px;
+  }
+}
