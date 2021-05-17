@@ -1,0 +1,136 @@
+.location__wrapper {
+  position: relative;
+}
+
+.location__map {
+  height: 364px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.location__desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 35px;
+    margin-bottom: 57px;
+    padding: 0 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 76px;
+    padding-right: 89px;
+    max-width: 1220px;
+    margin: 17px auto 0 auto;
+    width: 408px;
+    height: 201px;
+    align-items: center;
+    position: absolute;
+    background-color: @basic-white;
+    top: 80px;
+    left: ~"calc((100% - 1220px)/2)";
+  }
+}
+
+.location__desc--bold {
+  margin: 0;
+  margin-top: 28px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.location__desc--regular {
+  margin: 0;
+  margin-top: 28px;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  color: @special-dark-grey;
+  padding-right: 4px;
+
+  & span {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+    text-align: end;
+    font-size: 16px;
+
+    & span {
+      padding-top: 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    text-align: inherit;
+  }
+}
+
+//catalog-location
+
+.page__main--catalog .location__wrapper {
+  background-color: @basic-grey;
+}
+
+.page__main--catalog .location__desc--bold {
+  @media (min-width: @tablet-width) {
+    margin-top: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 9px;
+  }
+}
+
+.page__main--catalog .location__desc--regular {
+  @media (min-width: @tablet-width) {
+    margin-top: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 9px;
+  }
+}
+
+// form-location
+
+.page__main--form .location__wrapper {
+  background-color: @basic-grey;
+}
+
+.page__main--form .location__desc--bold {
+  @media (min-width: @tablet-width) {
+    margin-top: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.page__main--form .location__desc--regular {
+  @media (min-width: @tablet-width) {
+    margin-top: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+}

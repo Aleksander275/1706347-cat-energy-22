@@ -1,5 +1,5 @@
 .main__title--form {
-  margin: 0 0 37px 0;
+  margin: 0 0 34px 0;
   padding: 27px 20px 0 20px;
   font-size: 36px;
   line-height: 36px;
@@ -10,13 +10,13 @@
     font-size: 60px;
     line-height: 60px;
     border: none;
-    margin: 54px 0 54px 0;
+    margin: 50px 0 54px 38px;
     padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1220px;
-    margin: 64px auto 56px auto;
+    margin: 64px auto 52px auto;
   }
 }
 
@@ -40,15 +40,21 @@
     width: 323px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 61px;
+    margin-left: 40px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
+    margin-left: 0;
   }
 }
 
 .profile-form {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
+
   &__filter-container {
     @media (min-width: @desktop-width) {
       max-width: 1220px;
@@ -59,12 +65,13 @@
   }
 
   &__name {
-    margin: 0 0 7px 0;
+    margin: 0 0 13px 0;
     padding: 0 20px;
     border: none;
 
     @media (min-width: @tablet-width) {
       padding: 0 30px;
+      margin-bottom: 55px;
     }
 
     @media (min-width: @desktop-width) {
@@ -91,6 +98,12 @@
 
     @media (min-width: @tablet-width) {
       padding-right: 36px;
+      padding-left: 41px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-right: 16px;
+      padding-left: 0;
     }
   }
 
@@ -98,17 +111,19 @@
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: baseline;
-    margin-bottom: 13px;
+    margin-bottom: 8px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
   }
 
   &__input--name {
     padding: 13px 14px 15px 14px;
     margin-left: 14px;
+    font-family: "Oswald", sans-serif;
     font-size: 16px;
+    line-height: 18px;
     text-transform: uppercase;
     color: @special-dark-grey;
     order: 1;
@@ -126,18 +141,23 @@
 
   &__programme {
     margin: 0 0 26px 0;
-    padding: 22px 20px 19px 20px;
+    padding: 28px 20px 0 20px;
     border: none;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: @tablet-width) {
-      padding: 25px 30px;
-      margin-bottom: 71px;
+      padding: 30px 30px 5px 30px;
+      margin: 0 67px 75px 72px;
+      border: 1px solid #d9d9d9;
     }
 
     @media (min-width: @desktop-width) {
-      width: 450px;
+      width: 532px;
+      height: max-content;
+      margin-right: 0;
+      margin-bottom: 10px;
+      padding-top: 13px;
       border: 1px solid #e7e7e7;
     }
   }
@@ -149,10 +169,14 @@
   }
 
   &__item--programme {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 21px;
+    }
 
     @media (min-width: @desktop-width) {
-      margin-top: 26px;
+      margin-top: 19px;
     }
   }
 
@@ -168,6 +192,7 @@
     @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 30px;
+      left: 55px;
     }
 
     &::before {
@@ -179,6 +204,12 @@
       height: 30px;
       border: 1px solid @special-grey;
       border-radius: 50%;
+
+      @media (min-width: @tablet-width) {
+        left: -58px;
+        width: 37px;
+        height: 37px;
+      }
     }
 
     &:hover::before {
@@ -211,17 +242,22 @@
 
   &__title--login {
     width: 187px;
-    margin: 0 0 35px 0;
+    margin: 0 0 32px 0;
     font-weight: 400;
     font-size: 24px;
     line-height: 26px;
     background-color: @basic-white;
 
     @media (min-width: @tablet-width) {
-      width: 512px;
+      text-align: center;
+      width: 589px;
       font-size: 36px;
       line-height: 36px;
-      margin-bottom: 76px;
+      margin-bottom: 67px;
+    }
+
+    @media (min-width: @desktop-width) {
+      text-align: start;
     }
 
     &::before {
@@ -235,6 +271,7 @@
 
       @media (min-width: @tablet-width) {
         left: 0;
+        top: 21px;
       }
     }
   }
@@ -246,6 +283,7 @@
 
     @media (min-width: @tablet-width) {
       padding-right: 36px;
+      padding-left: 39px;
     }
 
     @media (min-width: @desktop-width) {
@@ -259,11 +297,10 @@
 
   &__item--login {
     position: relative;
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    align-items: baseline;
 
     & label {
+      display: flex;
+      align-items: baseline;
       font-size: 16px;
       text-transform: uppercase;
       color: @special-dark-grey;
@@ -279,10 +316,27 @@
     }
   }
 
+  .profile-form__input--login {
+    @media (min-width: @desktop-width) {
+      width: 458px;
+    }
+  }
+
+  .profile-form__input--tel {
+    @media (min-width: @desktop-width) {
+      width: 440px;
+    }
+  }
+
+  .profile-form__input--text {
+    width: 77px;
+  }
+
   &__input--login,
   &__input--tel {
     margin: 0 0 14px 11px;
-    padding: 14px 15px 16px 15px;
+    padding: 14px 15px 11px 15px;
+    width: 100%;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -296,6 +350,10 @@
       border-color: @special-grey;
     }
 
+    &:focus + svg {
+      stroke: @basic-green;
+    }
+
     @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 30px;
@@ -304,37 +362,26 @@
 
   &__input--login-icon {
     position: absolute;
-    top: 17px;
-    right: 10px;
+    top: 18px;
+    right: 17px;
     fill: @basic-white;
     stroke: @special-dark-grey-2;
+
+    @media (min-width: @tablet-width) {
+      top: 21px;
+    }
   }
 
   &__input--phone-icon {
     position: absolute;
-    top: 17px;
-    right: 10px;
-  }
+    top: 13px;
+    right: 13px;
 
-  /*&__input--login + label::before {
-    content: "";
-    position: absolute;
-    right: 16px;
-    width: 20px;
-    height: 15px;
-    background-image: url("./../../img/svg/icon_email.svg");
-    background-repeat: no-repeat;
+    @media (min-width: @tablet-width) {
+      top: 23px;
+      right: 17px;
+    }
   }
-
-  &__input--tel + label::before {
-    content: "";
-    position: absolute;
-    right: 16px;
-    width: 20px;
-    height: 21px;
-    background-image: url("./../../img/svg/icon_phone.svg");
-    background-repeat: no-repeat;
-  }*/
 
   &__comments {
     position: relative;
@@ -344,7 +391,7 @@
 
     @media (min-width: @tablet-width) {
       padding: 0 30px;
-      margin-bottom: 65px;
+      margin-bottom: 61px;
     }
   }
 
@@ -353,6 +400,7 @@
 
     @media (min-width: @tablet-width) {
       padding-right: 62px;
+      margin-left: 44px;
     }
 
     @media (min-width: @desktop-width) {
@@ -363,9 +411,9 @@
   }
 
   &__input--comments {
-    padding: 10px 15px;
+    padding: 10px 14px;
     width: 100%;
-    height: 150px;
+    height: 128px;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -379,7 +427,7 @@
     }
 
     @media (min-width: @tablet-width) {
-      height: 174px;
+      height: 153px;
       font-size: 20px;
       line-height: 30px;
     }
@@ -393,7 +441,11 @@
 
     @media (min-width: @tablet-width) {
       padding: 0 30px;
-      margin-bottom: 54px;
+      margin-bottom: 36px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 45px;
     }
   }
 
@@ -405,17 +457,21 @@
     @media (min-width: @tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-row-gap: 21px;
+      grid-column-gap: 32px;
+      margin-left: 53px;
     }
 
     @media (min-width: @desktop-width) {
       max-width: 1220px;
       margin: 0 auto;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 79px;
     }
   }
 
   &__item--add {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   &__checkbox + label {
@@ -430,6 +486,10 @@
       line-height: 30px;
     }
 
+    @media (min-width: @desktop-width) {
+      margin-left: 14px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -438,6 +498,13 @@
       width: 30px;
       height: 30px;
       border: 1px solid @special-grey;
+
+      @media (min-width: @tablet-width) {
+        top: -5px;
+        left: -58px;
+        width: 36px;
+        height: 36px;
+      }
     }
 
     &:hover::before {
@@ -469,20 +536,26 @@
 
     @media (min-width: @tablet-width) {
       left: 0;
+      top: 22px;
     }
   }
 
   @media (min-width: @tablet-width) {
-    width: 220px;
+    text-align: center;
+    width: 255px;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
   }
 }
 
 .profile-form__title--add {
   width: 164px;
-  margin: 0 0 35px 0;
+  margin: 0 0 37px 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -499,14 +572,21 @@
 
     @media (min-width: @tablet-width) {
       left: 0;
+      top: 22px;
     }
   }
 
   @media (min-width: @tablet-width) {
-    width: 252px;
+    text-align: center;
+    width: 291px;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+    margin-bottom: 67px;
   }
 }
 
@@ -519,6 +599,13 @@
   height: 16px;
   border-radius: 50%;
   background-color: @basic-green;
+
+  @media (min-width: @tablet-width) {
+    top: 7px;
+    left: -47px;
+    width: 17px;
+    height: 17px;
+  }
 }
 
 .profile-form__checkbox:checked + label::after {
@@ -530,6 +617,10 @@
   height: 14px;
   background-image: url("./../../img/svg/check.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    left: -47px;
+  }
 }
 
 .profile-form__conteiner-button {
@@ -542,7 +633,8 @@
   @media (min-width: @tablet-width) {
     padding: 0 30px;
     flex-direction: row;
-    align-items: baseline;
+    margin-left: 41px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: @desktop-width) {
@@ -575,6 +667,8 @@
 
   @media (min-width: @tablet-width) {
     width: 282px;
+    font-size: 20px;
+    padding: 15px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -588,6 +682,7 @@
   line-height: 16px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
     margin-left: 61px;
     font-size: 16px;
   }
@@ -595,10 +690,6 @@
   @media (min-width: @desktop-width) {
     margin-left: 81px;
   }
-}
-
-.page__main--form .location__wrapper {
-  background-color: @basic-grey;
 }
 
 .profile-form__error {

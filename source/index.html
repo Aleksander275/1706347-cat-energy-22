@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./img/favicon/favicon-little.svg" type="image/svg+xml">
@@ -102,7 +103,7 @@
 
               <h2 class="programme__title">похудение</h2>
 
-              <p class="programme__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <p class="programme__desc programme__desc--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
 
               <a class="programme__link" href="#">
                 <span>каталог slim</span>
@@ -123,7 +124,7 @@
 
               <h2 class="programme__title">Набор массы</h2>
 
-              <p class="programme__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <p class="programme__desc programme__desc--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
 
               <a class="programme__link" href="#">
                 <span>каталог pro</span>
@@ -194,7 +195,7 @@
 
                     <p class="simple__desc simple__desc--top">5 КГ</p>
 
-                    <p class="simple__desc simple__desc--bottom">снижение<br> веса</p>
+                    <p class="simple__desc simple__desc--bottom">снижение веса</p>
 
                   </div>
 
@@ -203,13 +204,13 @@
 
                     <p class="simple__desc simple__desc--top">60 ДНЕЙ</p>
 
-                    <p class="simple__desc simple__desc--bottom">затрачено<br> времени</p>
+                    <p class="simple__desc simple__desc--bottom">затрачено времени</p>
 
                   </div>
 
                 </div>
 
-                <div class="simple__item--bottom">Затраты на питание: <span>15000 РУБ.</span></div>
+                <div class="simple__item--bottom">Затраты на питание: <span>15 000 РУБ.</span></div>
 
               </div>
 
@@ -217,35 +218,39 @@
 
             <div class="simple__slider">
 
-              <div class="slider__big">
+              <div class="slider">
 
-                <picture>
+                <div class="slider__slim">
 
-                  <!--<source type="image/webp" media="(min-width: 768px)" srcset="./img/sample/big-cat-tablet.webp 1x, ./img/sample/big-cat-tablet@2x.webp 2x">
+                  <picture>
 
-                  <source type="image/webp" srcset="./img/sample/big-cat-mobile.webp 1x, ./img/sample/big-cat-mobile@2x.webp 2x">-->
+                    <!--<source type="image/webp" media="(min-width: 768px)" srcset="./img/sample/slim-cat-tablet.webp 1x, ./img/sample/slim-cat-tablet@2x.webp 2x">
 
-                  <source media="(min-width: 768px)" srcset="./img/sample/big-cat-tablet.png 1x, ./img/sample/big-cat-tablet@2x.png 2x">
+                    <source type="image/webp" srcset="./img/sample/slim-cat-mobile.webp 1x, ./img/sample/slim-cat-mobile@2x.webp 2x">-->
 
-                  <img src="./img/sample/big-cat-mobile.png" srcset="./img/sample/big-cat-mobile@2x.png 2x" alt="толстый кот">
+                    <source media="(min-width: 768px)" srcset="./img/sample/slim-cat-tablet.png 1x, ./img/sample/slim-cat-tablet@2x.png 2x">
 
-                </picture>
+                    <img src="./img/sample/slim-cat-mobile.png" srcset="./img/sample/slim-cat-mobile@2x.png 2x" alt="худой кот">
 
-              </div>
+                  </picture>
 
-              <div class="slider__slim">
+                </div>
 
-                <picture>
+                <div class="slider__big">
 
-                  <!--<source type="image/webp" media="(min-width: 768px)" srcset="./img/sample/slim-cat-tablet.webp 1x, ./img/sample/slim-cat-tablet@2x.webp 2x">
+                  <picture>
 
-                  <source type="image/webp" srcset="./img/sample/slim-cat-mobile.webp 1x, ./img/sample/slim-cat-mobile@2x.webp 2x">-->
+                    <!--<source type="image/webp" media="(min-width: 768px)" srcset="./img/sample/big-cat-tablet.webp 1x, ./img/sample/big-cat-tablet@2x.webp 2x">
 
-                  <source media="(min-width: 768px)" srcset="./img/sample/slim-cat-tablet.png 1x, ./img/sample/slim-cat-tablet@2x.png 2x">
+                    <source type="image/webp" srcset="./img/sample/big-cat-mobile.webp 1x, ./img/sample/big-cat-mobile@2x.webp 2x">-->
 
-                  <img src="./img/sample/slim-cat-mobile.png" srcset="./img/sample/slim-cat-mobile@2x.png 2x" alt="худой кот">
+                    <source media="(min-width: 768px)" srcset="./img/sample/big-cat-tablet.png 1x, ./img/sample/big-cat-tablet@2x.png 2x">
 
-                </picture>
+                    <img src="./img/sample/big-cat-mobile.png" srcset="./img/sample/big-cat-mobile@2x.png 2x" alt="толстый кот">
+
+                  </picture>
+
+                </div>
 
               </div>
 
@@ -255,7 +260,7 @@
 
                 <div class="control__item">
 
-                  <input class="control-range" type="range" id="cat-range" name="cat-range" min="0" max="1">
+                  <input class="control-range" type="range" id="cat-range" name="cat-range" min="0" max="100" value="50">
                   <label for="cat-range"></label>
 
                 </div>
@@ -288,7 +293,7 @@
 
           <div class="location__map">
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5845149169324!2d30.321094750559467!3d59.93903625434457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617961008837!5m2!1sru!2sru" width="600" height="362" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5845149169324!2d30.321094750559467!3d59.93903625434457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617961008837!5m2!1sru!2sru" width="600" height="362" style="border: 0; height: 100%; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
 
           </div>
 
