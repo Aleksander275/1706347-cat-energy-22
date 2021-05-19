@@ -1,0 +1,127 @@
+//section catalog-add
+
+.catalog-add {
+  &__wrapper {
+    padding: 0 20px;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 30px;
+    }
+  }
+
+  &__title--container {
+    @media (min-width: @desktop-width) {
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title--main {
+    margin: 25px 0 36px 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 53px;
+      top: 16px;
+      right: 0;
+      height: 2px;
+      background-color: @basic-green;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin: 17px 0 78px 0;
+      width: 410px;
+      text-align: center;
+      font-size: 36px;
+      line-height: 36px;
+      background-color: @basic-white;
+
+      &::before {
+        width: 100%;
+        top: 22px;
+        z-index: -1;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 31px;
+      text-align: start;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: @desktop-width) {
+      width: 896px;
+      margin-bottom: 86px;
+    }
+  }
+
+  &__item {
+    padding: 13px 0 19px 0;
+    border-bottom: 1px solid @special-grey;
+
+    &:first-child {
+      border-top: 1px solid @special-grey;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 13px 37px 24px 37px;
+      border: 1px solid @special-grey;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      padding: 18px 0 12px 0;
+      border: none;
+      border-bottom: 1px solid @special-grey;
+
+      &:first-child {
+        border-top: 1px solid @special-grey;
+      }
+    }
+  }
+}
+
+.catalog-add__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.catalog-add__item .button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: @basic-white;
+  background-color: @basic-green;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
+}

@@ -36,3 +36,11 @@ profileForm.addEventListener("submit", function (evt) {
     inputName.classList.add("profile-form__error");
   }
 });
+
+// slider
+
+function fun1() {
+  const controlRange = document.querySelector('.control-range');
+  const sliderBig = document.querySelector('.slider__big');
+  sliderBig.style.width = controlRange.value+'%';
+}

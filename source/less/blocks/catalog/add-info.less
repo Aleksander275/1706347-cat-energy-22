@@ -1,0 +1,54 @@
+.add-info {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 612px;
+    padding: 0;
+  }
+
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0 15px 0;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: @special-dark-grey;
+
+    &--cost {
+      @media (min-width: @tablet-width) {
+        margin-left: 50px;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      margin: 18px 0 10px 0;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 288px;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @special-dark-grey-2;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}

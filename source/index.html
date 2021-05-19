@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/normalize.min.css">
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./img/favicon/favicon-little.svg" type="image/svg+xml">
@@ -71,11 +71,11 @@
 
             <picture>
 
-              <!--<source type="image/webp" media="(min-width: 1220px)" srcset="img/product/product-desktop.webp 1x, img/product/product-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/product/product-desktop.webp 1x, img/product/product-desktop@2x.webp 2x">
 
               <source type="image/webp" media="(min-width: 768px)" srcset="img/product/product-tablet.webp 1x, img/product/product-tablet@2x.webp 2x">
 
-              <source type="image/webp" srcset="img/product/product-mobile.webp, img/product/product-mobile@2x.webp 2x">-->
+              <source type="image/webp" srcset="img/product/product-mobile.webp, img/product/product-mobile@2x.webp 2x">
 
               <source media="(min-width: 1220px)" srcset="img/product/product-desktop.png 1x, img/product/product-desktop@2x.png 2x">
 
@@ -177,7 +177,7 @@
 
       <section class="sample">
 
-        <div class="sample__conteiner">
+        <div class="sample__container">
 
           <div class="sample__wrapper">
 
@@ -224,9 +224,9 @@
 
                   <picture>
 
-                    <!--<source type="image/webp" media="(min-width: 768px)" srcset="./img/sample/slim-cat-tablet.webp 1x, ./img/sample/slim-cat-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/sample/slim-cat-tablet.webp 1x, ./img/sample/slim-cat-tablet@2x.webp 2x">
 
-                    <source type="image/webp" srcset="./img/sample/slim-cat-mobile.webp 1x, ./img/sample/slim-cat-mobile@2x.webp 2x">-->
+                    <source type="image/webp" srcset="./img/sample/slim-cat-mobile.webp 1x, ./img/sample/slim-cat-mobile@2x.webp 2x">
 
                     <source media="(min-width: 768px)" srcset="./img/sample/slim-cat-tablet.png 1x, ./img/sample/slim-cat-tablet@2x.png 2x">
 
@@ -240,9 +240,9 @@
 
                   <picture>
 
-                    <!--<source type="image/webp" media="(min-width: 768px)" srcset="./img/sample/big-cat-tablet.webp 1x, ./img/sample/big-cat-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/sample/big-cat-tablet.webp 1x, ./img/sample/big-cat-tablet@2x.webp 2x">
 
-                    <source type="image/webp" srcset="./img/sample/big-cat-mobile.webp 1x, ./img/sample/big-cat-mobile@2x.webp 2x">-->
+                    <source type="image/webp" srcset="./img/sample/big-cat-mobile.webp 1x, ./img/sample/big-cat-mobile@2x.webp 2x">
 
                     <source media="(min-width: 768px)" srcset="./img/sample/big-cat-tablet.png 1x, ./img/sample/big-cat-tablet@2x.png 2x">
 
@@ -260,7 +260,7 @@
 
                 <div class="control__item">
 
-                  <input class="control-range" type="range" id="cat-range" name="cat-range" min="0" max="100" value="50">
+                  <input class="control-range" type="range" id="cat-range" name="cat-range" oninput="fun1()" min="0" max="100" value="50">
                   <label for="cat-range"></label>
 
                 </div>
@@ -364,7 +364,7 @@
 
     </footer>
 
-    <script src="./js/cat-energy.js"></script>
+    <script src="./js/cat-energy.min.js"></script>
 
   </body>
 
