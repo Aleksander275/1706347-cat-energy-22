@@ -1,56 +1,3 @@
-
-.page-header__wrapper {
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 11px;
-}
-
-.logo__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.logo-title--link {
-  margin: 5px 9px 0 0;
-}
-
-.logo__wrapper a {
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
-.toggle--close {
-  margin: 0;
-  padding: 0;
-  border: none;
-  width: 24px;
-  height: 24px;
-  background-image: url("../../img/logo_mobile--close.svg");
-  background-color: @basic-white;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.toggle--open {
-  margin: 0;
-  padding: 0;
-  border: none;
-  width: 24px;
-  height: 18px;
-  background-image: url("../../img/button-logo_mobile.svg");
-  background-color: @basic-white;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
 .main-nav__list {
   padding: 0;
   margin: 0;
@@ -104,15 +51,11 @@
   display: block;
 }
 
-@media (min-width: @tablet-width) {
-  .page-header__wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    margin-top: 24px;
-  }
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
 
+@media (min-width: @tablet-width) {
   .main-nav__item--current {
     border-bottom: 2px solid @basic-green;
     padding-bottom: 10px;
@@ -131,52 +74,18 @@
     display: none;
   }
 
-  .logo-title--link {
-    display: none;
-  }
-
   .main-nav__wrapper .main-nav__list {
     display: flex;
     flex-wrap: wrap;
     width: 440px;
     justify-content: space-between;
   }
-
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .logo-image--img {
-    display: none;
-  }
-
-  .logo-image--link {
-    width: 174px;
-    height: 52px;
-    background-image: url("../../img/logo-tablet.png");
-    background-color: @basic-white;
-    background-repeat: no-repeat;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__wrapper {
-    max-width: 1220px;
-    padding: 0 30px;
-    margin: 52px auto 0 auto;
-  }
-
   .main-nav__wrapper .main-nav__list {
     width: 479px;
     margin-bottom: 5px;
-  }
-
-  .logo-image--link {
-    width: 202px;
-    height: 59px;
-    background-image: url("../../img/logo-desktop.png");
-    background-color: @basic-white;
-    background-repeat: no-repeat;
   }
 
   .main-nav__link {

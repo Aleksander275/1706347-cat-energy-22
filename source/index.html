@@ -13,23 +13,23 @@
     <link rel="manifest" href="manifest.webmanifest">
 
   </head>
-  <body class="page__body">
+  <body class="page-body">
 
     <header class="page-header">
 
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper logo">
 
         <div class="logo__wrapper">
 
-          <a class="logo-image--link" href="index.html"><img class="logo-image--img" src="./img/logo-mobile.png" width="34" height="38" alt="логотип кэт энерджи"></a>
+          <a class="logo__image-link" href="index.html"><img class="logo__img" src="./img/logo-mobile.svg" width="34" height="38" alt="логотип кэт энерджи"></a>
 
-          <a class="logo-title--link" href="index.html"><img class="logo-title--img" src="./img/logo-mobile-2.svg" width="101" height="18" alt="кэт энерджи"></a>
+          <a class="logo__title-link" href="index.html"><img src="./img/logo-mobile-2.svg" width="101" height="18" alt="кэт энерджи"></a>
 
-          <button class="main-nav__toggle toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="logo__toggle logo__toggle--nojs logo__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         </div>
 
-        <nav class="main-nav main-nav--close">
+        <nav class="main-nav main-nav--close main-nav--nojs">
 
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -49,15 +49,20 @@
 
       <h1 class="visually-hidden">Функциональное питание для котов</h1>
 
+      <div class="background-cat">
+        <div class="background-cat__container">
+        </div>
+      </div>
+
       <section class="product">
 
-        <div class="product-slogan">
+        <div class="product__slogan">
 
-          <div class="product-slogan__wrapper">
+          <div class="product__slogan-wrapper">
 
-            <h2 class="product-slogan__title">Функциональное<br> питание для котов</h2>
+            <h2 class="product__slogan-title">Функциональное<br> питание для котов</h2>
 
-            <p class="product-slogan__slogan">Занялся собой? Займись котом!</p>
+            <p class="product__slogan-slogan">Занялся собой? Займись котом!</p>
 
           </div>
 
@@ -65,9 +70,9 @@
 
         </div>
 
-        <div class="product-image">
+        <div class="product__image">
 
-          <div class="product-image__wrapper">
+          <div class="product__image-wrapper">
 
             <picture>
 
@@ -75,13 +80,13 @@
 
               <source type="image/webp" media="(min-width: 768px)" srcset="img/product/product-tablet.webp 1x, img/product/product-tablet@2x.webp 2x">
 
-              <source type="image/webp" srcset="img/product/product-mobile.webp, img/product/product-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/product/product-mobile.webp 1x, img/product/product-mobile@2x.webp 2x">
 
               <source media="(min-width: 1220px)" srcset="img/product/product-desktop.png 1x, img/product/product-desktop@2x.png 2x">
 
               <source media="(min-width: 768px)" srcset="img/product/product-tablet.png 1x, img/product/product-tablet@2x.png 2x">
 
-              <img class="product-image__image" src="img/product/product-mobile.png" srcset="img/product/product-mobile@2x.png 2x" alt="изображение продукта">
+              <img src="img/product/product-mobile.png" srcset="img/product/product-mobile@2x.png 2x" alt="изображение продукта">
 
             </picture>
 
@@ -95,7 +100,7 @@
 
         <div class="programme__list">
 
-          <div class="programme__item--wrapper">
+          <div class="programme__item-wrapper">
 
             <div class="programme__item programme__item--slim">
 
@@ -107,7 +112,7 @@
 
               <a class="programme__link" href="#">
                 <span>каталог slim</span>
-                <svg class="programme__link--icon" width="24" height="12">
+                <svg class="programme__link-icon" width="24" height="12">
                   <use xlink:href="./img/svg/sprite.svg#programme-icon"></use>
                 </svg>
               </a>
@@ -116,7 +121,7 @@
 
           </div>
 
-          <div class="programme__item--wrapper">
+          <div class="programme__item-wrapper">
 
             <div class="programme__item programme__item--pro">
 
@@ -128,7 +133,7 @@
 
               <a class="programme__link" href="#">
                 <span>каталог pro</span>
-                <svg class="programme__link--icon" width="24" height="12">
+                <svg class="programme__link-icon" width="24" height="12">
                   <use xlink:href="./img/svg/sprite.svg#programme-icon"></use>
                 </svg>
               </a>
@@ -181,42 +186,42 @@
 
           <div class="sample__wrapper">
 
-            <div class="simple__info">
+            <div class="sample__info">
 
               <h2 class="sample__title">Живой пример</h2>
 
-              <p class="sample__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+              <p class="sample__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-              <div class="simple__list">
+              <div class="sample__list">
 
-                <div class="simple__item-conteiner">
+                <div class="sample__item-conteiner">
 
-                  <div class="simple__item">
+                  <div class="sample__item">
 
-                    <p class="simple__desc simple__desc--top">5 КГ</p>
+                    <p class="sample__desc sample__desc--top">5 КГ</p>
 
-                    <p class="simple__desc simple__desc--bottom">снижение веса</p>
+                    <p class="sample__desc sample__desc--bottom">снижение веса</p>
 
                   </div>
 
 
-                  <div class="simple__item">
+                  <div class="sample__item">
 
-                    <p class="simple__desc simple__desc--top">60 ДНЕЙ</p>
+                    <p class="sample__desc sample__desc--top">60 ДНЕЙ</p>
 
-                    <p class="simple__desc simple__desc--bottom">затрачено времени</p>
+                    <p class="sample__desc sample__desc--bottom">затрачено времени</p>
 
                   </div>
 
                 </div>
 
-                <div class="simple__item--bottom">Затраты на питание: <span>15 000 РУБ.</span></div>
+                <div class="sample__item-bottom">Затраты на питание: <span>15 000 РУБ.</span></div>
 
               </div>
 
             </div>
 
-            <div class="simple__slider">
+            <div class="sample__slider">
 
               <div class="slider">
 
@@ -254,13 +259,13 @@
 
               </div>
 
-              <div class="slider__control">
+              <div class="control">
 
                 <span class="control__text">было</span>
 
                 <div class="control__item">
 
-                  <input class="control-range" type="range" id="cat-range" name="cat-range" oninput="fun1()" min="0" max="100" value="50">
+                  <input class="control__range" type="range" id="cat-range" name="cat-range" oninput="fun1()" min="0" max="100" value="50">
                   <label for="cat-range"></label>
 
                 </div>
@@ -285,9 +290,9 @@
 
           <div class="location__desc">
 
-            <p class="location__desc--bold">приглашаем<br> к сотрудничеству<br> дилеров!</p>
+            <p class="location__desc-bold">приглашаем<br> к сотрудничеству<br> дилеров!</p>
 
-            <p class="location__desc--regular">ул. Большая<br> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+            <p class="location__desc-regular">ул. Большая<br> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
 
           </div>
 
@@ -309,17 +314,17 @@
 
         <div class="page-footer__title">
           <a href="index.html">
-            <img class="page-footer__title--img" src="./img/footer/footer-logo.svg" width="128" height="24" alt="лого Кэт энерджи">
+            <img class="page-footer__title-img" src="./img/footer/footer-logo.svg" width="128" height="24" alt="лого Кэт энерджи">
           </a>
         </div>
 
-        <div class="page-footer__social">
+        <div class="page-footer__social social">
 
           <ul class="social__list">
 
             <li class="social__item">
               <a class="social__link" href="#">
-                <svg class="social__link--vkontakte" width="23" height="16">
+                <svg class="social__link-vkontakte" width="23" height="16">
                   <use xlink:href="./img/svg/sprite.svg#vk-icon"></use>
                 </svg>
                 <span class="visually-hidden">Вконтакте</span>
@@ -328,7 +333,7 @@
 
             <li class="social__item">
               <a class="social__link" href="#">
-                <svg class="social__link--instagram" width="16" height="16">
+                <svg class="social__link-instagram" width="16" height="16">
                   <use xlink:href="./img/svg/sprite.svg#instagram-icon"></use>
                 </svg>
                 <span class="visually-hidden">Инстаграмм</span>
@@ -337,7 +342,7 @@
 
             <li class="social__item">
               <a class="social__link" href="#">
-                <svg class="social__link--facebook" width="13" height="20">
+                <svg class="social__link-facebook" width="13" height="20">
                   <use xlink:href="./img/svg/sprite.svg#facebook-icon"></use>
                 </svg>
                 <span class="visually-hidden">Фейсбук</span>
@@ -348,12 +353,12 @@
 
         </div>
 
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright copyright">
 
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
 
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__link--icon" width="27" height="34">
+            <svg class="copyright__link-icon" width="27" height="34">
               <use xlink:href="./img/svg/sprite.svg#academy-icon"></use>
             </svg>
           </a>

@@ -14,17 +14,11 @@
   &__desc {
     display: flex;
     justify-content: space-between;
-    margin: 13px 0 15px 0;
+    margin: 11px 0 15px 0;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 14px;
     color: @special-dark-grey;
-
-    &--cost {
-      @media (min-width: @tablet-width) {
-        margin-left: 50px;
-      }
-    }
 
     @media (min-width: @tablet-width) {
       margin: 18px 0 10px 0;
@@ -35,6 +29,12 @@
     @media (min-width: @desktop-width) {
       width: 288px;
       margin: 0;
+    }
+  }
+
+  &__desc-cost {
+    @media (min-width: @tablet-width) {
+      margin-left: 50px;
     }
   }
 

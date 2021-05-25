@@ -1,0 +1,77 @@
+.background-cat {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.background-cat__container {
+  &::before {
+    content: "";
+    position: absolute;
+    height: 302px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: @basic-green;
+    opacity: 0.85;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 302px;
+    width: 100%;
+    background-image: url("../../img/product/background-cat-mobile.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    z-index: -2;
+    background-color: #295724;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/product/background-cat-mobile@2x.png");
+      background-size: 320px 302px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    &::after {
+      background-image: none;
+      background-color: @basic-white;
+    }
+
+    &::before {
+      background-color: @basic-white;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 50%;
+    right: 0;
+
+    &::after {
+      background-image: url("../../img/product/background-cat-desktop.png");
+      height: 694px;
+      top: -126px;
+      background-color: #295724;
+      background-size: cover;
+      background-position-x: 0%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/product/background-cat-desktop@2x.png");
+        background-size: cover;
+      }
+    }
+
+    &::before {
+      top: -126px;
+      height: 694px;
+      background-color: @basic-green;
+    }
+  }
+}
