@@ -1,0 +1,81 @@
+.logo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.logo__title-link {
+  margin: 5px 9px 0 0;
+}
+
+.logo__wrapper a {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__toggle--close {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/logo_mobile--close.svg");
+  background-color: @basic-white;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.logo__toggle--open {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 24px;
+  height: 18px;
+  background-image: url("../../img/button-logo_mobile.svg");
+  background-color: @basic-white;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.logo__toggle--nojs {
+  background-image: none;
+  cursor: default;
+}
+
+@media (min-width: @tablet-width) {
+  .logo__title-link {
+    display: none;
+  }
+
+  .logo__toggle {
+    display: none;
+  }
+
+  .logo__img {
+    display: none;
+  }
+
+  .logo__image-link {
+    width: 174px;
+    height: 52px;
+    background-image: url("../../img/logo-tablet.svg");
+    background-color: @basic-white;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__image-link {
+    width: 202px;
+    height: 59px;
+    background-image: url("../../img/logo-desktop.svg");
+    background-color: @basic-white;
+    background-repeat: no-repeat;
+  }
+}

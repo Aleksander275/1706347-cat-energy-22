@@ -1,10 +1,10 @@
 const gulp = require("gulp");
 const rename = require("gulp-rename");
 const del = require("del");
-const htmlmin = require('gulp-htmlmin');
-const csso = require('postcss-csso');
+const htmlmin = require("gulp-htmlmin");
+const csso = require("postcss-csso");
 const terser = require("gulp-terser");
-const imagemin = require('gulp-imagemin');
+const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const plumber = require("gulp-plumber");
@@ -47,10 +47,7 @@ exports.styles = styles;
 
 const normalize = () => {
   return gulp.src("source/css/normalize.css")
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
+    .pipe(csso())
     .pipe(rename("normalize.min.css"))
     .pipe(gulp.dest("build/css"));
 }
@@ -142,7 +139,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,

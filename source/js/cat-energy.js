@@ -1,32 +1,35 @@
-const navMain = document.querySelector('.main-nav');
-const navToggle = document.querySelector('.main-nav__toggle');
+const navMain = document.querySelector(".main-nav");
+const navToggle = document.querySelector(".logo__toggle");
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--close')) {
-    navMain.classList.remove('main-nav--close');
-    navMain.classList.add('main-nav--open');
+navMain.classList.remove("main-nav--nojs");
+navToggle.classList.remove("logo__toggle--nojs");
+
+navToggle.addEventListener("click", function() {
+  if (navMain.classList.contains("main-nav--close")) {
+    navMain.classList.remove("main-nav--close");
+    navMain.classList.add("main-nav--open");
   } else {
-    navMain.classList.add('main-nav--close');
-    navMain.classList.remove('main-nav--open');
+    navMain.classList.add("main-nav--close");
+    navMain.classList.remove("main-nav--open");
   }
 });
 
-navToggle.addEventListener('click', function() {
-  if (navToggle.classList.contains('toggle--open')) {
-    navToggle.classList.remove('toggle--open');
-    navToggle.classList.add('toggle--close');
+navToggle.addEventListener("click", function() {
+  if (navToggle.classList.contains("logo__toggle--open")) {
+    navToggle.classList.remove("logo__toggle--open");
+    navToggle.classList.add("logo__toggle--close");
   } else {
-    navToggle.classList.add('toggle--open');
-    navToggle.classList.remove('toggle--close');
+    navToggle.classList.add("logo__toggle--open");
+    navToggle.classList.remove("logo__toggle--close");
   }
 });
 
 // form-error
 
-const profileForm = document.querySelector('.profile-form');
-const inputName = document.querySelector('.profile-form__input--name');
-const inputLogin = document.querySelector('.profile-form__input--login');
-const iconLogin = document.querySelector('.profile-form__input--login-icon');
+const profileForm = document.querySelector(".profile-form");
+const inputName = document.querySelector(".profile-form__input-name");
+const inputLogin = document.querySelector(".profile-form__input-login");
+const iconLogin = document.querySelector(".profile-form__input-login-icon");
 
 profileForm.addEventListener("submit", function (evt) {
   if (!inputName.value || !inputLogin.value) {
@@ -40,7 +43,7 @@ profileForm.addEventListener("submit", function (evt) {
 // slider
 
 function fun1() {
-  const controlRange = document.querySelector('.control-range');
-  const sliderBig = document.querySelector('.slider__big');
-  sliderBig.style.width = controlRange.value+'%';
+  const controlRange = document.querySelector(".control__range");
+  const sliderBig = document.querySelector(".slider__big");
+  sliderBig.style.width = controlRange.value+"%";
 }

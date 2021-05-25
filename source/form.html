@@ -14,29 +14,29 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
 
-  <body class="page__body">
+  <body class="page-body">
 
     <header class="page-header">
 
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper logo">
 
         <div class="logo__wrapper">
 
-          <a class="logo-image--link" href="index.html"><img class="logo-image--img" src="./img/logo-mobile.png" width="34" height="38" alt="логотип кэт энерджи"></a>
+          <a class="logo__image-link" href="index.html"><img class="logo__img" src="./img/logo-mobile.png" width="34" height="38" alt="логотип кэт энерджи"></a>
 
-          <a class="logo-title--link" href="index.html"><img class="logo-title--img" src="./img/logo-mobile-2.svg" width="101" height="18" alt="кэт энерджи"></a>
+          <a class="logo__title-link" href="index.html"><img src="./img/logo-mobile-2.svg" width="101" height="18" alt="кэт энерджи"></a>
 
-          <button class="main-nav__toggle  toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="logo__toggle logo__toggle--nojs logo__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         </div>
 
-        <nav class="main-nav main-nav--close">
+        <nav class="main-nav main-nav--close main-nav--nojs">
 
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a class="main-nav__link main-nav__catalog-link" href="index.html">главная</a></li>
               <li class="main-nav__item"><a class="main-nav__link main-nav__catalog-link" href="catalog.html">каталог продукции</a></li>
-              <li class="main-nav__item"><a class="main-nav__link main-nav__catalog-link main-nav__item--current-catalog" href="form.html">подбор программы</a></li>
+              <li class="main-nav__item main-nav__item--current-catalog"><a class="main-nav__link main-nav__catalog-link" href="form.html">подбор программы</a></li>
             </ul>
           </div>
 
@@ -46,13 +46,13 @@
 
     </header>
 
-    <main class="page__main--form">
+    <main class="main-form">
 
-      <h1 class="main__title--form">Подбор программы</h1>
+      <h1 class="title-form">Подбор программы</h1>
 
       <section class="form">
 
-        <div class="form__title--container">
+        <div class="form__title-container">
 
           <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
 
@@ -64,25 +64,25 @@
 
             <fieldset class="profile-form__name">
 
-              <ul class="profile-form__list--name">
+              <ul class="profile-form__list-name">
 
-                <li class="profile-form__item--name">
+                <li class="profile-form__item-name">
 
-                  <input class="profile-form__input--name" type="text" id="name" name="name" placeholder="барсик">
+                  <input class="profile-form__input-name" type="text" id="name" name="name" placeholder="барсик">
                   <label for="name">ИМЯ:*</label>
 
                 </li>
 
-                <li class="profile-form__item--name">
+                <li class="profile-form__item-name">
 
-                  <input class="profile-form__input--name" type="number" id="mass" name="mass" placeholder="7">
+                  <input class="profile-form__input-name" type="number" id="mass" name="mass" placeholder="7">
                   <label for="mass">Вес (кг):*</label>
 
                 </li>
 
-                <li class="profile-form__item--name">
+                <li class="profile-form__item-name">
 
-                  <input class="profile-form__input--name" type="number" id="age" name="age" placeholder="7">
+                  <input class="profile-form__input-name" type="number" id="age" name="age" placeholder="7">
                   <label for="age">Возраст (лет):</label>
 
                 </li>
@@ -93,23 +93,23 @@
 
             <fieldset class="profile-form__programme">
 
-              <ul class="profile-form__list--programme">
+              <ul class="profile-form__list-programme">
 
-                <li class="profile-form__item--programme">
+                <li class="profile-form__item-programme">
 
                   <input class="profile-form__radio visually-hidden" type="radio" id="slim" name="programme" checked>
                   <label for="slim">похудение</label>
 
                 </li>
 
-                <li class="profile-form__item--programme">
+                <li class="profile-form__item-programme">
 
                   <input class="profile-form__radio visually-hidden" type="radio" id="big" name="programme">
                   <label for="big">Набор массы</label>
 
                 </li>
 
-                <li class="profile-form__item--programme">
+                <li class="profile-form__item-programme">
 
                   <input class="profile-form__radio visually-hidden" type="radio" id="advice" name="programme">
                   <label for="advice">Не знаю (Нужен ваш совет)</label>
@@ -126,21 +126,21 @@
 
             <div class="profile-form__container-title">
 
-              <h3 class="profile-form__title--login">Контактные данные (владельца кота)</h3>
+              <h3 class="profile-form__title-login">Контактные данные (владельца кота)</h3>
 
             </div>
 
-            <ul class="profile-form__list--login">
+            <ul class="profile-form__list-login">
 
-              <li class="profile-form__item--login">
+              <li class="profile-form__item-login">
 
                 <label for="login">
 
-                  <span class="profile-form__input--text">e-mail:*</span>
+                  <span class="profile-form__input-text">e-mail:*</span>
 
-                  <input class="profile-form__input--login" type="email" id="login" name="login" placeholder="kuklachev@gmail.com">
+                  <input class="profile-form__input-login" type="email" id="login" name="login" placeholder="kuklachev@gmail.com">
 
-                  <svg class="profile-form__input--login-icon" width="20" height="15">
+                  <svg class="profile-form__input-login-icon" width="20" height="15">
                     <use xlink:href="./img/svg/sprite.svg#email-icon"></use>
                   </svg>
 
@@ -148,15 +148,15 @@
 
               </li>
 
-              <li class="profile-form__item--login">
+              <li class="profile-form__item-login">
 
                 <label for="tel">
 
                   <span>Телефон:*</span>
 
-                  <input class="profile-form__input--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90">
+                  <input class="profile-form__input-tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90">
 
-                  <svg class="profile-form__input--phone-icon" width="20" height="21">
+                  <svg class="profile-form__input-phone-icon" width="20" height="21">
                     <use xlink:href="./img/svg/sprite.svg#phone-icon"></use>
                   </svg>
 
@@ -172,13 +172,13 @@
 
             <div class="profile-form__container-title">
 
-              <h3 class="profile-form__title--comments">Комментарий</h3>
+              <h3 class="profile-form__title-comments">Комментарий</h3>
 
             </div>
 
             <div class="profile-form__container-text">
 
-              <textarea class="profile-form__input--comments" id="comment" name="comment" rows="4" placeholder="расскажите обо всех повадках кота"></textarea>
+              <textarea class="profile-form__input-comments" id="comment" name="comment" rows="4" placeholder="расскажите обо всех повадках кота"></textarea>
               <label for="comment"></label>
 
             </div>
@@ -189,34 +189,34 @@
 
             <div class="profile-form__container-title">
 
-              <h3 class="profile-form__title--add">Дополнительно</h3>
+              <h3 class="profile-form__title-add">Дополнительно</h3>
 
             </div>
 
-            <ul class="profile-form__list--add">
+            <ul class="profile-form__list-add">
 
-              <li  class="profile-form__item--add">
+              <li  class="profile-form__item-add">
 
                 <input class="profile-form__checkbox visually-hidden" type="checkbox" id="filter-sweetener" name="sweetener" checked>
                 <label for="filter-sweetener">сахарозаменитель</label>
 
               </li>
 
-              <li  class="profile-form__item--add">
+              <li  class="profile-form__item-add">
 
                 <input class="profile-form__checkbox visually-hidden" type="checkbox" id="filter-water" name="water">
                 <label for="filter-water">питьевая вода</label>
 
               </li>
 
-              <li  class="profile-form__item--add">
+              <li  class="profile-form__item-add">
 
                 <input class="profile-form__checkbox visually-hidden" type="checkbox" id="filter-milk" name="milk">
                 <label for="filter-milk">молоко</label>
 
               </li>
 
-              <li  class="profile-form__item--add">
+              <li  class="profile-form__item-add">
 
                 <input class="profile-form__checkbox visually-hidden" type="checkbox" id="filter-vitamins" name="vitamins">
                 <label for="filter-vitamins">витамины</label>
@@ -247,9 +247,9 @@
 
           <div class="location__desc">
 
-            <p class="location__desc--bold">приглашаем<br> к сотрудничеству<br> дилеров!</p>
+            <p class="location__desc-bold">приглашаем<br> к сотрудничеству<br> дилеров!</p>
 
-            <p class="location__desc--regular">ул. Большая<br> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+            <p class="location__desc-regular">ул. Большая<br> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
 
           </div>
 
@@ -271,17 +271,17 @@
 
         <div class="page-footer__title">
           <a href="index.html">
-            <img class="page-footer__title--img" src="./img/footer/footer-logo.svg" width="128" height="24" alt="лого Кэт энерджи">
+            <img class="page-footer__title-img" src="./img/footer/footer-logo.svg" width="128" height="24" alt="лого Кэт энерджи">
           </a>
         </div>
 
-        <div class="page-footer__social">
+        <div class="page-footer__social social">
 
           <ul class="social__list">
 
             <li class="social__item">
               <a class="social__link" href="#">
-                <svg class="social__link--vkontakte" width="23" height="16">
+                <svg class="social__link-vkontakte" width="23" height="16">
                   <use xlink:href="./img/svg/sprite.svg#vk-icon"></use>
                 </svg>
                 <span class="visually-hidden">Вконтакте</span>
@@ -290,7 +290,7 @@
 
             <li class="social__item">
               <a class="social__link" href="#">
-                <svg class="social__link--instagram" width="16" height="16">
+                <svg class="social__link-instagram" width="16" height="16">
                   <use xlink:href="./img/svg/sprite.svg#instagram-icon"></use>
                 </svg>
                 <span class="visually-hidden">Инстаграмм</span>
@@ -299,7 +299,7 @@
 
             <li class="social__item">
               <a class="social__link" href="#">
-                <svg class="social__link--facebook" width="13" height="20">
+                <svg class="social__link-facebook" width="13" height="20">
                   <use xlink:href="./img/svg/sprite.svg#facebook-icon"></use>
                 </svg>
                 <span class="visually-hidden">Фейсбук</span>
@@ -310,12 +310,12 @@
 
         </div>
 
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright copyright">
 
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
 
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__link--icon" width="27" height="34">
+            <svg class="copyright__link-icon" width="27" height="34">
               <use xlink:href="./img/svg/sprite.svg#academy-icon"></use>
             </svg>
           </a>
