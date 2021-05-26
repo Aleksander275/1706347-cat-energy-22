@@ -43,6 +43,17 @@ const styles = () => {
 
 exports.styles = styles;
 
+// Normalize
+
+const normalize = () => {
+  return gulp.src("source/css/normalize.css")
+    .pipe(csso())
+    .pipe(rename("normalize.min.css"))
+    .pipe(gulp.dest("build/css"));
+}
+
+exports.normalize = normalize;
+
 // Scripts
 
 const scripts = () => {
