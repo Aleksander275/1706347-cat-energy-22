@@ -47,7 +47,9 @@ exports.styles = styles;
 
 const normalize = () => {
   return gulp.src("source/css/normalize.css")
-    .pipe(csso())
+    .pipe(postcss([
+      csso()
+    ]))
     .pipe(rename("normalize.min.css"))
     .pipe(gulp.dest("build/css"));
 }
